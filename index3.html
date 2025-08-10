@@ -1,22 +1,58 @@
 <html>
 <head>
 <title> Very exciting place on the internet</title>   
-
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <style>
-p {outline-color: black;}
-p.solid {outline-style: solid;}
+    
+    
+    
     
         body{
             background-color: floralwhite;
             text-align: center;
         }
+    
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+
+.   sidenav a:hover {
+        color: #f1f1f1;
+    }
+
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+
+    @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+    }
         
-         .bg{
-            background-image: url("mintdiamond.png");
-            height: 100%;
-            background-position: center;
-            background-repeat: repeat;
-            background-size: 304x234;
+    .bg{
+        background-image: url("mintdiamond.png");
+        height: 100%;
+        background-position: center;
+        background-repeat: repeat;
+        background-size: 304x234;
         }
         h1{
             color:darkgoldenrod;
@@ -56,13 +92,20 @@ p.solid {outline-style: solid;}
         
     </style>
     </head>
- 
-    
     <body class="bg">
-     
+        
+    <div class="sidenav">
+  <a href="#about">About Me</a>
+  <a href="#photos">Photos</a>
+    <a href="#thoughts">Thoughts</a>
+  <a href="#shrines">Shrines</a>
+  <a href="#contact">Contact</a>
+</div>    
     
-    <div>
+
         <br>
+        
+    <div class="main">
     <h1>
         <img src="wordart.png">
     </h1>
@@ -98,6 +141,8 @@ p.solid {outline-style: solid;}
     <a href="https://www.glitter-graphics.com"><img src="http://dl4.glitter-graphics.net/pub/629/629854qpx44pjq53.gif" width=405 height=21 border=0></a><br><a href="https://www.glitter-graphics.com"></a>
     <br>
     <br>
+        
+    </div> 
     
     </body> 
     
